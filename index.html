@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS Maker Tool</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1>Advanced CSS Maker Tool</h1>
+      <div class="controls">
+        <div class="control-group">
+          <label for="widthRange">Width:</label>
+          <input type="range" id="widthRange" min="50" max="500" />
+          <span id="widthValue">250px</span>
+        </div>
+        <div class="control-group">
+          <label for="heightRange">Height:</label>
+          <input type="range" id="heightRange" min="50" max="500" />
+          <span id="heightValue">250px</span>
+        </div>
+        <div class="control-group">
+          <label for="bgColorPicker">Background Color:</label>
+          <input type="color" id="bgColorPicker" value="#ff0000" />
+        </div>
+        <div class="control-group">
+          <label for="borderTopLeftRadiusRange"
+            >Border Radius (Top-Left):</label
+          >
+          <input type="range" id="borderTopLeftRadiusRange" min="0" max="100" />
+          <span id="borderTopLeftRadiusValue">0px</span>
+        </div>
+        <div class="control-group">
+          <label for="borderTopRightRadiusRange"
+            >Border Radius (Top-Right):</label
+          >
+          <input
+            type="range"
+            id="borderTopRightRadiusRange"
+            min="0"
+            max="100"
+          />
+          <span id="borderTopRightRadiusValue">0px</span>
+        </div>
+        <div class="control-group">
+          <label for="borderBottomRightRadiusRange"
+            >Border Radius (Bottom-Right):</label
+          >
+          <input
+            type="range"
+            id="borderBottomRightRadiusRange"
+            min="0"
+            max="100"
+          />
+          <span id="borderBottomRightRadiusValue">0px</span>
+        </div>
+        <div class="control-group">
+          <label for="borderBottomLeftRadiusRange"
+            >Border Radius (Bottom-Left):</label
+          >
+          <input
+            type="range"
+            id="borderBottomLeftRadiusRange"
+            min="0"
+            max="100"
+          />
+          <span id="borderBottomLeftRadiusValue">0px</span>
+        </div>
+        <div class="control-group">
+          <label for="borderWidthRange">Border Width:</label>
+          <input type="range" id="borderWidthRange" min="0" max="20" />
+          <span id="borderWidthValue">0px</span>
+        </div>
+        <div class="control-group">
+          <label for="borderColorPicker">Border Color:</label>
+          <input type="color" id="borderColorPicker" value="#000000" />
+        </div>
+        <div class="control-group">
+          <label for="boxShadowHOffsetRange"
+            >Box Shadow Horizontal Offset:</label
+          >
+          <input type="range" id="boxShadowHOffsetRange" min="-50" max="50" />
+          <span id="boxShadowHOffsetValue">0px</span>
+        </div>
+        <div class="control-group">
+          <label for="boxShadowVOffsetRange">Box Shadow Vertical Offset:</label>
+          <input type="range" id="boxShadowVOffsetRange" min="-50" max="50" />
+          <span id="boxShadowVOffsetValue">0px</span>
+        </div>
+        <div class="control-group">
+          <label for="boxShadowBlurRange">Box Shadow Blur Radius:</label>
+          <input type="range" id="boxShadowBlurRange" min="0" max="50" />
+          <span id="boxShadowBlurValue">0px</span>
+        </div>
+        <div class="control-group">
+          <label for="boxShadowSpreadRange">Box Shadow Spread Radius:</label>
+          <input type="range" id="boxShadowSpreadRange" min="-50" max="50" />
+          <span id="boxShadowSpreadValue">0px</span>
+        </div>
+        <div class="control-group">
+          <label for="boxShadowColorPicker">Box Shadow Color:</label>
+          <input type="color" id="boxShadowColorPicker" value="#000000" />
+        </div>
+      </div>
+      <button id="generateCSS">Generate CSS</button>
+      <textarea id="cssOutput" rows="10" readonly></textarea>
+    </div>
+    <div class="output">
+      <div id="box" class="box"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
