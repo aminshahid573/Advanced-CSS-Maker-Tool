@@ -1,6 +1,6 @@
 # Advanced CSS Maker Tool
 
-![Advanced CSS Maker Tool](https://img.shields.io/badge/CSS-Maker-Tool-blue)
+![Advanced CSS Maker Tool](screenshots/screenshot2.png)
 
 Welcome to the **Advanced CSS Maker Tool**! This tool allows you to easily customize the styling of a box element using a variety of CSS properties. The tool provides a user-friendly interface for adjusting width, height, background color, border radius, border width, border color, and box shadow.
 
